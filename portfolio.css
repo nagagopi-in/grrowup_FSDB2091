@@ -1,0 +1,311 @@
+:root {
+    --primary-color: #49dfdd;
+    --secondary-color: #2196F3;
+    --background-color: #f2f2f2;
+    --text-color: #333;
+    --accent-color: #FF9800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header .user {
+    margin-bottom: 10px;
+}
+
+header .user .imgdiv {
+    width: 130px;
+    height: 170px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 80%;
+    border: 5px solid #fff;
+}
+
+header .user .imgdiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .user .name {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header .user .post {
+    font-size: 1.5rem;
+}
+
+header .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+header .navbar ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+header .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header .navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+section.home {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+section.home h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+section.home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+section.home h1 span {
+    color: var(--accent-color);
+}
+
+section.home p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+section.home .btn {
+    padding: 1rem 3rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section.home .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+section.about {
+    background-color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+section.about h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+section.about p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+section.about .counter {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+section.about .box {
+    width: 200px;
+    padding: 1rem;
+    margin: 0 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+section.about .box span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+section.about .box h3 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+section.portfolio {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+section.portfolio h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+section.portfolio .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.portfolio .box {
+    width: 300px;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+section.portfolio .box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+section.portfolio .box .projectinfo {
+    padding: 1rem;
+}
+
+section.portfolio .box .projectinfo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+section.portfolio .box .projectinfo p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+section.portfolio .box .projectinfo .btn1 {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+section.portfolio .box .projectinfo .btn1:hover {
+    background-color: var(--secondary-color);
+}
+
+section.contact {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: left;
+}
+
+section.contact .heading {
+    margin-bottom: 2rem;
+}
+
+section.contact .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section.contact .row form {
+    width: 400px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section.contact .row form .box {
+    margin-bottom: 1rem;
+}
+
+section.contact .row form input,
+section.contact .row form textarea {
+    width: calc(100% - 70px);
+    padding: 0.4rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+section.contact .row form .btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section.contact .row form .btn:hover {
+    background-color: var(--secondary-color);
+    
+}
+
+footer.footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 44px;
+}
+
+footer.footer .left {
+    font-size: 0.8rem;
+}
+
+footer.footer .right {
+    margin-top: 0.5rem;
+}
+
+footer.footer .right a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+footer.footer .right a:hover {
+    opacity: 0.7;
+}
