@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="C:\Users\NAGA GOPI\prepinsta\grrowup FSD\week3\Todolist.css">
+    <script src="C:\Users\NAGA GOPI\prepinsta\grrowup FSD\week3\Todolist.js"></script>
+</head>
+<body>
+    <main>
+        <!-- Instructions -->
+        <section class="instructions">
+            <h3>Instructions:</h3>
+            <ul>
+              <li>Click the green button to add a new todo.</li>
+              <li>Click the white checkbox to complete a todo.</li>
+              <li>Click the blue icon to edit a todo.</li>
+              <li>Click the red icon to remove a todo.</li>
+              <li>Type in the filter input to search for todos.</li>
+            </ul>
+          </section>
+        <!-- title -->
+        <h1 class="title-primary">Todo List</h1>              
+          
+        <!-- add todo -->
+        <section>
+          <label for="todo" class="input-label">Add New</label>
+          <input type="text" name="todo" id="todo" placeholder="type here...">
+          <button class="btn btn-add"><i class="fas fa-plus"></i></button>
+        </section>
+        
+        <!-- filter todos -->
+        <section>
+          <label for="filter" class="input-label">Filter</label>
+          <input type="text" name="filter" id="filter" placeholder="type here...">
+        </section>  
+        
+        <!-- active todos -->
+        <section>
+          <h2 class="title-secondary title-active">Active</h2>
+          <ul class="list list-active">
+            <li class="list-item">
+              <span class="left-side">
+                <button class="btn btn-check btn-check-active">
+                  <i class="fas fa-check fa-check-active"></i>
+                </button>
+                <span class="text">Walk the dog</span>
+                <textarea cols="25" rows="3" class="li-text-edit"></textarea>
+              </span>
+              <span class="right-side">
+                <button class="btn btn-edit">
+                  <i class="fas fa-pen"></i>
+                </button>
+                <button class="btn btn-remove">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span> 
+            </li>
+            
+            <li class="list-item">
+              <span class="left-side">
+                <button class="btn btn-check btn-check-active">
+                  <i class="fas fa-check fa-check-active"></i>
+                </button>
+                <span class="text">Buy bread</span>
+                <textarea cols="25" rows="3" class="li-text-edit"></textarea>
+              </span>
+              <span class="right-side">
+                <button class="btn btn-edit">
+                  <i class="fas fa-pen"></i>
+                </button>
+                <button class="btn btn-remove">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span>
+            </li>
+          </ul>
+        </section>
+      
+        <!-- completed todos -->
+        <section>
+          <h2 class="title-secondary title-completed">Completed</h2>
+          <ul class="list list-completed">
+            <li class="list-item">
+              <span class="left-side">
+                <button class="btn btn-check btn-check-completed">
+                  <i class="fas fa-check black-tick fa-check-completed"></i>
+                </button>
+                <span class="text strike-through">See the doctor</span>
+                <textarea cols="25" rows="3" class="li-text-edit"></textarea>
+              </span>
+              <span class="right-side">
+                <button class="btn btn-edit">
+                  <i class="fas fa-pen"></i>
+                </button>
+                <button class="btn btn-remove">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span>
+            </li>
+          </ul>
+        </section>
+      
+        <!-- clear all option -->
+        <button class="btn-clear">CLEAR ALL</button>
+        
+      </main>
+      
+      <!-- Warning messages -->
+      <div class="warning">
+        <span class="message">Type a todo first!</span>
+        <button class="btn btn-warning-remove">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>    
+</body>
+</html>
