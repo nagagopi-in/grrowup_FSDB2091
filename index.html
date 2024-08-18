@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Doctor Appointment Booking</h1>
+        </header>
+        
+        <section id="booking">
+            <h2>Book an Appointment</h2>
+            <form id="booking-form">
+                <input type="text" id="patient-name" placeholder="Patient Name" required>
+                <select id="doctor-select" required>
+                    <!-- Options will be populated dynamically -->
+                </select>
+                <input type="date" id="appointment-date" required>
+                <select id="appointment-time" required>
+                    <!-- Options will be populated dynamically -->
+                </select>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+
+        <section id="cancellation">
+            <h2>Cancel an Appointment</h2>
+            <form id="cancellation-form">
+                <input type="text" id="appointment-id" placeholder="Appointment ID" required>
+                <button type="submit">Cancel Appointment</button>
+            </form>
+        </section>
+
+        <section id="viewing">
+            <h2>View Appointments</h2>
+            <button id="view-appointments">Show All Appointments</button>
+            <div id="appointments-list">
+                <!-- Appointments will be displayed here -->
+            </div>
+        </section>
+
+        <section id="doctors">
+            <h2>Doctors</h2>
+            <div id="doctors-list">
+                <!-- Doctor cards will be populated dynamically -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
