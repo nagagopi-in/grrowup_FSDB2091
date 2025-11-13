@@ -1,8 +1,4 @@
-# Week 1 - Web Technologies Training Tasks
-
 This repository contains my solutions for the FSDB2091 Web Technologies training, Weeks 1 to 6. Each week features a series of tasks designed to build foundational skills in HTML, CSS, and web design.
-
-## WEEK 1 Tasks
 
 ### Task 1: Personal Website Homepage
 - **Description:** Create a personal website homepage showcasing skills and interests.
